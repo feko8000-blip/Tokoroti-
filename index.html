@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lin's Bakery Roti Sobek Banjarmasin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary: #d35400;
+            --secondary: #f39c12;
+            --dark: #2c3e50;
+            --light: #fdfefe;
+            --gray: #ecf0f1;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        header {
+            background: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar {
+            max-width: 1100px;
+            margin: auto;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 0 1rem;
+        }
+
+        .hero-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero-content p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .rating {
+            color: var(--secondary);
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #b94000;
+        }
+
+        .btn-whatsapp {
+            background-color: #25d366;
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #128c7e;
+        }
+
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 4rem 1rem;
+        }
+
+        h2.section-title {
+            text-align: center;
+            margin-bottom: 2.5rem;
+            font-size: 2rem;
+            color: var(--dark);
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .info-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            background: var(--gray);
+            padding: 2rem;
+            border-radius: 8px;
+        }
+
+        .info-box h3 {
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        .info-box p {
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        @media(max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Lin's Bakery Banjarmasin</div>
+            <ul class="nav-links">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#menu">Galeri</a></li>
+                <li><a href="#info">Informasi</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero" style="margin-top:60px;">
+        <div class="hero-content">
+            <h1>Lin's Bakery Roti Sobek Banjarmasin</h1>
+            <p>Toko Makanan & Roti Sobek Homemade Lembut Berkualitas di Banjarmasin</p>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>5,0 (13 Ulasan)</span>
+            </div>
+            <a href="https://wa.me/6285650868984" target="_blank" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> Pesan Sekarang (WhatsApp)</a>
+        </div>
+    </section>
+
+    <section id="menu">
+        <h2 class="section-title">Galeri Produk</h2>
+        <div class="menu-grid">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?auto=format&fit=crop&w=600&q=80" alt="Roti Sobek Lin's Bakery">
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?auto=format&fit=crop&w=600&q=80" alt="Roti Sobek Lin's Bakery">
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1586444248902-2f64eddc13df?auto=format&fit=crop&w=600&q=80" alt="Roti Sobek Lin's Bakery">
+            </div>
+        </div>
+    </section>
+
+    <section id="info">
+        <div class="info-container">
+            <div class="info-box">
+                <h3><i class="fas fa-clock"></i> Jam Operasional</h3>
+                <p><strong>Status:</strong> <span style="color: green; font-weight: bold;">Buka</span></p>
+                <p>Buka setiap hari hingga pukul 19.00 WITA.</p>
+            </div>
+            <div class="info-box" id="kontak">
+                <h3><i class="fas fa-map-marker-alt"></i> Lokasi & Alamat</h3>
+                <p><strong>Kota:</strong> Banjarmasin</p>
+                <p><strong>Alamat:</strong> Komp. Keruwing Indah, masuk ± 5 meter sebelah kiri jalan.</p>
+                <p>Melayani pembelian langsung maupun pemesanan via WhatsApp:</p>
+                <a href="https://wa.me/6285650868984" target="_blank" class="btn btn-whatsapp" style="margin-top: 10px; padding: 0.5rem 1rem; font-size: 0.9rem;"><i class="fab fa-whatsapp"></i> 0856-5086-8984</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Lin's Bakery Roti Sobek Banjarmasin. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
